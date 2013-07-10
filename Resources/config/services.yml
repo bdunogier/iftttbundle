@@ -1,0 +1,8 @@
+parameters:
+    bdifttt.controller.class: BD\Bundle\IFTTTBundle\Controller\IFTTT
+
+services:
+    bdifttt.controller:
+        class: %bdifttt.controller.class%
+        calls:
+            - [ setContainer, [ @service_container ] ]

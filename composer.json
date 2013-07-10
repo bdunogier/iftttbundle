@@ -1,0 +1,19 @@
+{
+    "name": "bdunogier/iftttbundle",
+    "description": "A generic Symfony 2 bundle that receives IFTTT recipe actions",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Bertrand Dunogier",
+            "homepage": "https://github.com/bdunogier/iftttbundle"
+        }
+    ],
+    "require": {
+        "bdunogier/xmlrpcbundle": "@dev"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {"BD\\Bundle\\IFTTTBundle": ""}
+    },
+    "target-dir": "BD/Bundle/IFTTTBundle"
+}

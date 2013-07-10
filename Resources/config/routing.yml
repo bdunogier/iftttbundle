@@ -1,0 +1,14 @@
+bdifttt.getRecentPosts:
+    path: /xmlrpc/metaWeblog.getRecentPosts
+    defaults:
+        _controller: bdifttt.controller:getRecentPosts
+
+bdifttt.supportedMethods:
+    path: /xmlrpc/mt.supportedMethods
+    defaults:
+        _controller: bdifttt.controller:supportedMethods
+
+bdifttt.newPost:
+    path: /xmlrpc/metaWeblog.newPost
+    defaults:
+        _controller: bdifttt.controller:newPost
