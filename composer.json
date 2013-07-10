@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "bdunogier/xmlrpcbundle": "dev-master"
+        "bdunogier/xmlrpcbundle": "*"
     },
     "minimum-stability": "dev",
     "autoload": {
