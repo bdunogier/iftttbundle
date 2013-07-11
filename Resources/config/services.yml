@@ -1,6 +1,7 @@
 parameters:
     bdifttt.controller.class: BD\Bundle\IFTTTBundle\Controller\IFTTT
-
+    bdifttt.ifttt.request_parser.class: BD\Bundle\IFTTTBundle\IFTTT\RequestParser
+    bdifttt.factory.class: BD\Bundle\IFTTTBundle\DependencyInjection\Factory
 
 services:
     bdifttt.controller:
@@ -13,6 +14,3 @@ services:
 
     bdifttt.ifttt.request_parser:
         class: %bdifttt.ifttt.request_parser.class%
-
-    bdifttt.handler:
-        alias: %bdifttt.handler.id%
