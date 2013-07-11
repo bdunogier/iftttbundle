@@ -1,8 +1,18 @@
 parameters:
     bdifttt.controller.class: BD\Bundle\IFTTTBundle\Controller\IFTTT
 
+
 services:
     bdifttt.controller:
         class: %bdifttt.controller.class%
+        arguments:
+            - @bdifttt.ifttt.request_parser
+            - @bdifttt.handler
         calls:
             - [ setContainer, [ @service_container ] ]
+
+    bdifttt.ifttt.request_parser:
+        class: %bdifttt.ifttt.request_parser.class%
+
+    bdifttt.handler:
+        alias: %bdifttt.handler.id%
