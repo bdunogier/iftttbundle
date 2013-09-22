@@ -34,6 +34,17 @@ class Request
      */
     public $description;
 
+    /**
+     * @var string
+     * Status for the published content. Possible values: publish, draft, private.
+     */
+    public $status;
+
+    /**
+     * @var string[]
+     */
+    public $keywords;
+
     public function __construct( array $properties = array() )
     {
         foreach ( $properties as $property => $value )

@@ -25,6 +25,8 @@ class RequestParser
             'password'    => $requestPostData[2],
             'title'       => $requestPostData[3]['title'],
             'description' => $requestPostData[3]['description'],
+            'keywords'    => $requestPostData[3]['mt_keywords'],
+            'status'      => $requestPostData[3]['post_status'],
         );
 
         return new Request( $requestProperties );
