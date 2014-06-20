@@ -1,5 +1,5 @@
 # IFTTT Bundle
-
+[![Analytics](https://ga-beacon.appspot.com/UA-52121860-1/iftttbundle/readme)](https://github.com/igrigorik/ga-beacon)
 Symfony 2 bundle that handles IFTTT actions using the Wordpress channel.
 
 ## Principle
